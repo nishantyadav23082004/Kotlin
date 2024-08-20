@@ -1,0 +1,9 @@
+fun main()
+{
+    val alphabets = arrayOf('A','E','I','M')  // initializing an array
+    for(i in alphabets){
+    println(i)  // Accessing and printing all the elements of the array(alphabets) using for loop
+    }
+
+    alphabets.forEach{word -> println(alphabets)}  // Accessing and printing all the elements of the array(alphabets) using forEach
+}
