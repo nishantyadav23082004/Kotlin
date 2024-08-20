@@ -1,0 +1,11 @@
+fun main()
+{
+    val alphabets = arrayOf('A','E','I','M')  // initializing an array
+    if(alphabets.isEmpty()){  /* Checking if the array is empty or not
+                                 .isEmpty() returns true if the array is empty */
+        println("Array alphabets is Empty")
+    }
+    else{
+        println("Array aplhabets is Not Empty")
+    }
+}
