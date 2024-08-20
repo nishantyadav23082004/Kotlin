@@ -1,0 +1,7 @@
+fun main()
+{
+    val num=arrayOf(1,2,3,4)  //1st way to initialize an array
+    val name:Array<String>=arrayOf("Siddhant","Anshul","Jagdish","Nishant") // 2nd way to initialize an array
+    val square=Array(5){i->i*i}  //3rd way(using lambda expression) to initialize an array
+    val num2=arrayOf(arrayOf(1,2,3),arrayOf(4,5,6),arrayOf(7,8,9)) //Array of arrays(2D array)
+}
