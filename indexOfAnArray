@@ -1,0 +1,12 @@
+fun main()
+{
+    val alphabets = arrayOf('A','E','I','M')  // initializing an array
+    var FirstEle = alphabets.first()  // .first() returns the first element of an array(alphabets)
+    println(FirstEle)
+    var LastEle = alphabets.last()  // .last() returns the last element of an array(alphabets)
+    println(LastEle)
+
+    var index = alphabets.indexOf('I')  // .indexOf() returns the index of the element passed in braces/round-brackets
+    println("Index of I is "+index)
+
+}
