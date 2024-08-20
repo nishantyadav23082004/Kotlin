@@ -1,0 +1,6 @@
+fun main()
+{
+    val alphabets = arrayOf('A','E','I','M')  // initializing an array
+    var Size = alphabets.size  // finding the size of an array
+    println(Size)
+}
