@@ -1,0 +1,6 @@
+fun main()
+{
+    val alphabets = arrayOf('A','E','I','M')  // initializing an array
+    var char1 = alphabets[2]  // Accessing the element at third position(index = 2)
+    print(char1)  // printing the value of char1
+}
