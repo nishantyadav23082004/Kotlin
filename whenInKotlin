@@ -1,0 +1,15 @@
+fun main() {
+    print("Enter the Day Number(1-7): ")
+    val dayNumber = readln().toInt()
+    val dayName = when(dayNumber){  // Using when(in kotlin) which works same as switch(in java)
+        1 -> "Monday"
+        2 -> "Tuesday"
+        3 -> "Wednesday"
+        4 -> "Thursday"
+        5 -> "Friday"
+        6 -> "Saturday"
+        7 -> "Sunday"
+        else -> "Invalid day"
+    }
+    println("Day number "+dayNumber+" is $dayName")  // $ is used to print the value of a variable inside the string
+}
