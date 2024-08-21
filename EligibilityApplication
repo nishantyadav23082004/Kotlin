@@ -1,0 +1,17 @@
+fun main() {
+    print("Are you a member(Y/N): ")
+    var member: String = readln()  // Taking String input from the user using readln()
+    print("Please enter the amount: ")
+    var amount: Int = readln().toInt()  // Taking String input from the user using readln() and converting it to integer using .toInt()
+    if (amount >= 1000) {
+        if(member == "Y") {  // Nested if block
+            println("20% Discount")
+        }
+        else{
+            println("10% Discount")
+        }
+    }
+    else {
+        println("No Discount")
+    }
+}
