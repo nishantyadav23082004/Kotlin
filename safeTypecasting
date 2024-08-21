@@ -1,0 +1,5 @@
+fun main() {
+    var str1:String = "Anshul"
+    var num1:Int? = str1 as? Int  // as? does the safe typecasting(as can be used for Unsafe typecasting). It handles the class cast exception.
+    println(num1)  // returns/prints null (Because String cannot be typecasted to Int type)
+}
