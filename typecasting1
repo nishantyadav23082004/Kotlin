@@ -1,0 +1,9 @@
+fun main() {
+    var num1:Int = 100
+    var str1:String = num1.toString()  // Typecasting Integer to String
+    println(str1)
+    var num2:Float = num1.toFloat()  // Typecasting Integer to Float
+    println(num2)
+    var dub1:Double = num1.toDouble()  // Typecasting Integer to Double
+    println(dub1)
+}
