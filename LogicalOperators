@@ -1,0 +1,12 @@
+fun main() {
+    print("Enter (true/false): ")
+    var bool1:Boolean = readln().toBoolean()  // Taking string input from user and converting it to Boolean
+    print("Enter a (true/false): ")
+    var bool2:Boolean = readln().toBoolean()  // Taking string input from user and converting it to Boolean
+
+    println(bool1 && bool2)  // bool1 AND bool2
+    println(bool1 || bool2)  // bool1 OR bool2
+    println(!bool1)  // NOT bool1
+
+
+}
