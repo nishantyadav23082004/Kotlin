@@ -1,0 +1,6 @@
+fun main() {
+    val alphabets = arrayOf("A","B","C","D","E")
+    for(i in alphabets.indices){  // .indices stores the index of each element of array(alphabets) in i one by one
+        println("Element at index "+i+" is "+alphabets[i])
+    }
+}
