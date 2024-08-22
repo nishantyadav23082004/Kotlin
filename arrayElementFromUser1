@@ -1,0 +1,14 @@
+fun main() {
+    val alphabets = arrayOf("A","B","C","D","E")
+    /*for(i in alphabets){
+        println(i)
+    }*/
+    println("Enter the elements of the array:")
+    for(i in 0 .. 4){  // Taking elements of the array from user
+        alphabets[i] = readln()
+    }
+    println("Elements of the array are:")
+    for(i in alphabets){
+        println(i)
+    }
+}
