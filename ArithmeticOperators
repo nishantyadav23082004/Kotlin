@@ -1,0 +1,14 @@
+fun main() {
+    print("Enter a number: ")
+    var num1:Int = readln().toInt()  // Taking string input from user and converting it to Integer
+    print("Enter a number: ")
+    var num2:Int = readln().toInt()  // Taking string input from user and converting it to Integer
+
+    println("$num1 + $num2 is "+num1.plus(num2)) // num1.plus(num2) (in kotlin) is equivalent to num1+num2 (in java)
+    println("$num1 - $num2 is "+num1.minus(num2)) // num1.plus(num2) (in kotlin) is equivalent to num1-num2 (in java)
+    println("$num1 * $num2 is "+num1.times(num2)) // num1.plus(num2) (in kotlin) is equivalent to num1*num2 (in java)
+    println("$num1 / $num2 is "+num1.div(num2)) // num1.plus(num2) (in kotlin) is equivalent to num1/num2 (in java)
+    println("$num1 % $num2 is "+num1.rem(num2)) // num1.plus(num2) (in kotlin) is equivalent to num1%num2 (in java)
+
+
+}
