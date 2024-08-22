@@ -1,0 +1,27 @@
+fun main() {
+    val alphabets = arrayOf("A","B","C","D","E")
+    println("Elements of array(alphabets):")
+    for(i in alphabets){  // this for loop will iterate over all the elements in the array(alphabets)
+        println(i)
+    }
+
+    println("Numbers from 1 to 5 (Both included):")
+    for(i in 1..5){
+        println(i)  // Output: 1 2 3 4 5
+    }
+
+    println("Numbers from 1 to 5 (Excluding 5):")
+    for(i in 1 until 5){
+        println(i)  // Output: 1 2 3 4
+    }
+
+    println("Number from 5 to 1 (Both included):")
+    for(i in 5 downTo 1){  // reverse loop
+        println(i)  // Output: 5 4 3 2 1
+    }
+
+    println("Numbers from 10 to 1 with a step of 2 (Both included):")
+    for(i in 10 downTo 1 step 2){  // iterating using step keyword
+        println(i)  // Output: 10 8 6 4 2
+    }
+}
