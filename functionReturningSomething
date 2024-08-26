@@ -1,0 +1,21 @@
+fun main(){
+    print("Enter the temperature(in Celsius): ")
+    var num1 = readln().toInt()
+    print("Enter the temperature(in Fahrenheit): ")
+    var num2 = readln().toInt()
+
+    val tempInFahrenheit = toFahrenheit(num1)  // Calling a function, Converting Celsius to Fahrenheit
+
+    val tempInCelsius = toCelsius(num2)  // Calling a function, Converting Fahrenheit to Celsius
+
+    println("Temperature is "+ tempInFahrenheit +" degree Fahrenheit")
+    println("Temperature is "+ tempInCelsius +" degree Celsius")
+}
+fun toCelsius(a:Int):Double{  // Defining a function
+    val tempC = (a - 32) / 1.8
+    return tempC  // returning the variable tempC
+}
+fun toFahrenheit(b:Int):Double{  // Defining a function
+    val tempF = ((b * 1.8) + 32)
+    return tempF  // returning the variable tempF
+}
