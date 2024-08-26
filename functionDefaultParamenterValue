@@ -1,0 +1,11 @@
+fun main(){
+    print("Enter a number: ")
+    var num1 = readln().toInt()
+    print("Enter a number: ")
+    var num2 = readln().toInt()
+    Add(num1,num2)  // Calling a function
+}
+fun Add(a:Int=10,b:Int=40){  // Defining a function
+    val sum = a + b
+    println("Sum of "+a+" and "+b+" is "+sum)
+}
