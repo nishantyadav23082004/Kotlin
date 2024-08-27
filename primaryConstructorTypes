@@ -1,0 +1,23 @@
+class introduction(var name:String,var age:Int){  // creating a class (introduction)
+    constructor(x:String):this(){  // Using this keyword for primary constructor
+        this.name = x
+    }
+    constructor():this("World",1000)  // Using this keyword for primary constructor
+    fun intro(){
+        println("My name is "+name+" and age is "+age)
+    }
+}
+fun main(){
+    print("Enter your name: ")
+    var str1 = readln()
+    print("Enter your age: ")
+    var num1 = readln().toInt()
+    var obj1 = introduction(str1,num1)  // creating an object of a class (introduction) and passing 2 arguments
+    obj1.intro()  // calling a function (intro) of class (introduction)
+
+    var obj2 = introduction(str1)  // creating an object of a class (introduction) and passing only 1 argument
+    obj2.intro()  // calling a function (intro) of class (introduction)
+
+    var obj3 = introduction()  // creating an object of a class (introduction) and NOT passing any argument
+    obj3.intro()  // calling a function (intro) of class (introduction)
+}
