@@ -1,0 +1,10 @@
+class Name{  // creating a class (Name)
+    fun Area(){
+        var area = readln().toInt()
+        println("The area is: "+area)
+    }
+}
+fun main(){
+    var obj1 = Name()  // creating an object of a class (Name)
+    obj1.Area()  // calling a method/function of a class
+}
