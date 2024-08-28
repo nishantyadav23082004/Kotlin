@@ -1,0 +1,15 @@
+class Rectangle(var a:Double,var b:Double){  // primary constructor
+    
+    fun Area():Double{  // Defining a function Area() with return type Double
+        return this.a * this.b  // returning a * b, where a and b are the values passed by from the main function
+    }
+    fun Display(){
+        println("Area of "+a+" and "+b+" is "+Area())  // calling Area() function
+    }
+    
+}
+
+fun main(){
+    var obj1 = Rectangle(10.0,20.0)  // Creating object of class Rectangle and passing 2 arguments
+    obj1.Display()  // calling function Display() from the class Rectangle
+}
