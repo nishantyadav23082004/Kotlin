@@ -1,0 +1,16 @@
+class Factorial{
+    fun fact(x:Int):Int{
+        if(x==0){
+            return 1 
+        }
+        else{
+            return x * fac(x-1)
+        }
+    }
+}
+fun main(){
+    var obj1=Factorial()
+    print("Enter a number: ")
+    var num1 = readln().toInt()
+    print(obj1.fact(num1))
+}
