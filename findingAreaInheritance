@@ -1,0 +1,38 @@
+open class Rectangle(var a:Double,var b:Double){  // primary constructor
+
+    fun Area():Double{  // Defining a function Area() with return type Double
+        return this.a * this.b  // returning a * b, where a and b are the values passed by from the main function
+    }
+    open fun Display(){  // open because the function is to be inherited and overridden
+        println("Area of "+a+" and "+b+" is "+Area())  // calling Area() function
+    }
+
+}
+
+class Square(var s:Double):Rectangle(s,s){  // primary constructor, Inheriting class Rectangle
+
+    override fun Display(){  // Function Overriding
+        println("Area of square is "+Area())
+    }
+
+}
+class Circle(var p:Double){
+    fun CArea():Double{
+        return this.p * 2 * 3.14
+    }
+
+    fun show(){
+        println("Area of circle is "+CArea())
+    }
+
+}
+fun main(){
+    var obj1 = Rectangle(10.0,20.0)  // Creating object of class Rectangle and passing 2 arguments
+    obj1.Display()  // calling function Display() from the class Rectangle
+
+    var obj2 = Square(10.0)
+    obj2.Display()
+
+    var obj3 = Circle(2.0)
+    obj3.show()
+}
