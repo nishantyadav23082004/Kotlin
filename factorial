@@ -1,0 +1,13 @@
+class Factorial{
+    fun fac(x:Int):Int{
+        if(x==0){
+            return 1 }
+        else{
+            return x * fac(x-1)
+        }
+    }
+}
+fun main(){
+    var obj1=Factorial()
+    print(obj1.fac(2))
+}
