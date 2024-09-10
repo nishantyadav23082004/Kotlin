@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_9">
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scrollbarSize="48dp"
+        app:srcCompat="@drawable/img_6" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/profilePicture"
+        android:text="Name: Nishant"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/dateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/profilePicture"
+        android:text="DOB: 23/08/2004"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/emailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateOfBirth"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/profilePicture"
+        android:text="EmailId: nishant.12220113@lpu.in"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailId"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/img_1"
+        android:text="I am a 3rd year student currently pursuing my Bachelors in Technology in Computer Science and Engineering from Lovely Professional University. I have Cloud Computing as my specialization. I have Android Development as my open minor which is quite interesting."
+        android:textSize="27sp" />
+
+    <Button
+        android:id="@+id/acceptButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Bio"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Accept"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/rejectButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Bio"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/acceptButton1"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Reject"
+        android:textSize="34sp" />
+
+</RelativeLayout>
