@@ -29,7 +29,7 @@ class listView : AppCompatActivity() {
         add.setOnClickListener {
             var item = data.text.toString()
             if(item.isNotEmpty()){
-                list.add(bridge)
+                list.add(text)
                 data.text.clear()
                 bridge.notifyDataSetChanged()
             }
