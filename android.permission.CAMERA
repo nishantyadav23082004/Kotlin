@@ -1,0 +1,8 @@
+// This would be written in the AndroidManifest.xml
+// before the activity tag
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    
+    <uses-permission android:name="android.permission.CAMERA" />
